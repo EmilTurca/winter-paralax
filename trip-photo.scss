@@ -1,0 +1,17 @@
+.photo-trip {
+    width: $fallWidth / 2;
+    height: $fallWidth - 10%;
+    position: absolute;
+    right: 0;
+    object-fit: cover;
+    overflow-x: hidden;
+    div {
+        width: $fallWidth;
+        height: $fallWidth;
+    }
+    img {
+        width: $fallWidth;
+        height: $fallWidth;
+        display: inline-block;
+    }
+}
