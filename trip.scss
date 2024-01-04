@@ -1,0 +1,43 @@
+$fallVW: 100vw;
+.trip {
+    width: $fallVW / 2;
+    height: $fallHeight / 2;
+    background-color: #678;
+    position: absolute;
+    right: $fallVW -82vw;
+    text-align: center;
+    color: white;
+}
+.trip > .number > input {
+    width: $fallVW - 89vw;
+}
+.trip > button {
+    width: $fallVW - 75vw;
+}
+@media (min-width: 1000px) {
+    .trip {
+        width: $fallVW - 70vw;
+        height: $fallHeight - 78vh;
+        background-color: #678;
+        position: absolute;
+        right: $fallHeight - 36vh;
+        text-align: center;
+    }
+    .trip > .name > input {
+        width: 26.4vw;
+    }
+    .trip > .number > input {
+        width: 20vw;
+    }
+    .trip > .email > input {
+        width: 26.4vw;
+    }
+    .trip > .password > input {
+        width: 26.4vw;
+    }
+    .trip > button {
+        width: $fallVW / 5;
+        height: $fallHeight / 20;
+        margin-top: 30px;
+    }
+}
