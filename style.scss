@@ -1,0 +1,30 @@
+$fallDistance: 100px;
+body {
+    background-color: #334;
+    overflow: hidden;
+}
+.parallax-container {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    bottom: -30px;
+    left: 0;
+    border: 1px solid red;
+    perspective: $fallDistance;
+    overflow: auto;
+    scroll-behavior: smooth;
+    .layer {
+            font-size: $fallDistance;
+            color: white;
+            width: $fallWidth;
+            height: $fallWidth;
+            position: absolute;
+            @for $n from 1 through 5 {
+                &.layer-#{$n} {
+                    z-index: -1 * $n;
+                    transform: translateZ(-250px * $n) scale(2.5 * $n + 1);
+                    margin: 30% / $n 0;
+                }
+            }
+        }
+}
