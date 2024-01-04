@@ -1,0 +1,21 @@
+.bg-mountains {
+    background-image: url(munte-images.jpg);
+    background-size: cover;
+}
+.tree-left {
+    background-image: url(brad-cu-zapada-images.jpg);
+    background-repeat: no-repeat;
+    background-position: -370px 0;
+    filter: brightness($fallWidth / 2) contrast($fallWidth * 2);
+}
+.polar-bear {
+    width: $fallHeight;
+    height: $fallHeight;
+    background-image: url(urs-polar-images.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: $fallHeight / 2;
+    left: $fallWidth / 2;
+    filter: brightness(70%) contrast($fallWidth * 2);
+}
