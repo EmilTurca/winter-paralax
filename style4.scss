@@ -1,0 +1,39 @@
+:root {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    a {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-decoration: none;
+        color: white;
+        font-size: $fallDistance / 4;
+    }
+}
+.section {
+    height: $fallHeight;
+    width: auto;
+    text-align: right;
+    color: white;
+    padding: $fallWidth / 20;
+    box-sizing: border-box;
+    > * {
+        position: relative;
+        z-index: 999;
+    }
+    &#presentation {
+        //background-color: rgba(165, 42, 42, 0.322);
+        img {
+            width: 30vw;
+        }
+    }
+}
